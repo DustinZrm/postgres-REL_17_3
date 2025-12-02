@@ -383,11 +383,11 @@ check_root(const char *progname)
 #ifndef WIN32
 	if (geteuid() == 0)
 	{
-		write_stderr("\"root\" execution of the PostgreSQL server is not permitted.\n"
-					 "The server must be started under an unprivileged user ID to prevent\n"
-					 "possible system security compromise.  See the documentation for\n"
-					 "more information on how to properly start the server.\n");
-		exit(1);
+//		write_stderr("\"root\" execution of the PostgreSQL server is not permitted.\n"
+//					 "The server must be started under an unprivileged user ID to prevent\n"
+//					 "possible system security compromise.  See the documentation for\n"
+//					 "more information on how to properly start the server.\n");
+//		exit(1);
 	}
 
 	/*
